@@ -1,6 +1,7 @@
 # Is on the Job Food Safety Training at QSRs enough? How Does it Compare to Accredited Programs?
 
 ![](images/cross_contamination2.jpg)
+[Image Source](https://albion.ca/blog/2016/09/05/cross-contamination/)
 
 # Background
 
@@ -11,6 +12,7 @@ While this all sounds great, it does introduce new health risks that were not so
 So, when you walk through the door of your favorite fast-casual restaurant, and you look behind the line into the kitchen and see the line cook slinging raw chicken thighs, all ranging in thickness and size, onto the grill, I bet you want to be confident that that person knows the hot holding temperature for chicken, right?
 
 ![](images/hot_holding2.jpg)
+[Image Source](https://southernhillshospital.com/about/newsroom/prevent-foodborne-illness-when-cooking-over-the-holidays)
 
 # The Problem
 
@@ -57,7 +59,7 @@ First, I want to quickly check to see if my assumption about inflated failure ra
 
 Passes and failures for exams taken between 3/1/2016 and 12/31/2016:  
 ![](images/pie_before.png)  
-Passes and failures for exam taken 1/1/2017 and 2/6/2019:
+Passes and failures for exam taken 1/1/2017 and 2/6/2019:  
 ![](images/pie_after.png)
 
 
@@ -80,10 +82,21 @@ So, knowing that I am working with only a sample of the true population, can I c
 
 Creating beta distributions for each group, and plotting the distributions together is VERY telling:  
 
-![](images\beta_dists_plots.png)  
+![](images\beta_dists_plots2.png)  
 The distributions do not overlap, meaning if were to pull a random variable blindly from a group of all random variables for each distribution, we would be able to identify which distribution it came from, simply by looking at the value, 100% of the time.  
 
 In addition, if we were to pull a random variable from each distribution, 100% of the time, our RV from the distribution for those that take the course would be larger than the RV from the distribution for those that didn't take the course. Because of this, I can say 100% credibility, that it is always better to take the course before taking the exam.  
 
 I also have 95.0% credible interval for passing rate of employees who take the course within 7 days of taking the exam: 0.871 (lower bound) - 0.903 (upper bound)
-95.0% credible interval for passing rate of employees who take the course within 7 days of taking the exam: 0.871 (lower bound) - 0.903 (upper bound).
+95.0% credible interval for passing rate of employees who take the course within 7 days of taking the exam: 0.871 (lower bound) - 0.903 (upper bound
+
+#### MVP
+1. Clean data - successful
+2. Merge data successfully - successful
+3. Complete A/B test to try to show statistical evidence that those who take the course prior to the exam have a better chance of passing - successful
+
+#### Going Deeper
+If additional time was available, there were a couple areas that peaked my interest for deeper analysis:  
+1. For those with corresponding course data, can a linear model be fitted to successfully predict the score of an exam based on their score on the post-course quiz and the time between when the course was completed and the test was taken?
+ 
+2. If I were able to obtain financial data associated to manager pay, and food safety certifications costs, I would like tie my A/B results to some financial analysis. Sure, we can say that you have a higher chance of passing the exam if you take the course prior. But, is the higher chance of passing on a first attempt enough to outweigh the labor and certification costs associated to it?
