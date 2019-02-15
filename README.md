@@ -1,6 +1,6 @@
 # Is on the Job Food Safety Training at QSRs enough? How Does it Compare to Accredited Programs?
 
-![](images/cross_contamination2.jpg)
+![](images/cross_contamination2.jpg)  
 [Image Source](https://albion.ca/blog/2016/09/05/cross-contamination/)
 
 # Background
@@ -11,7 +11,7 @@ While this all sounds great, it does introduce new health risks that were not so
 
 So, when you walk through the door of your favorite fast-casual restaurant, and you look behind the line into the kitchen and see the line cook slinging raw chicken thighs, all ranging in thickness and size, onto the grill, I bet you want to be confident that that person knows the hot holding temperature for chicken, right?
 
-![](images/hot_holding2.jpg)
+![](images/hot_holding2.jpg)  
 [Image Source](https://southernhillshospital.com/about/newsroom/prevent-foodborne-illness-when-cooking-over-the-holidays)
 
 # The Problem
@@ -82,7 +82,7 @@ So, knowing that I am working with only a sample of the true population, can I c
 
 Creating beta distributions for each group, and plotting the distributions together is VERY telling:  
 
-![](images\beta_dists_plots.png)  
+![](images/beta_dists_plots.png)  
 The distributions do not overlap, meaning if were to pull a random variable blindly from a group of all random variables for each distribution, we would be able to identify which distribution it came from, simply by looking at the value, 100% of the time.  
 
 In addition, if we were to pull a random variable from each distribution, 100% of the time, our RV from the distribution for those that take the course would be larger than the RV from the distribution for those that didn't take the course. Because of this, I can say 100% credibility, that it is always better to take the course before taking the exam.  
