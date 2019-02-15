@@ -63,7 +63,7 @@ Passes and failures for exam taken 1/1/2017 and 2/6/2019:
 ![](images/pie_after.png)
 
 
-now that I am confident in having removed those records, let's get a feel of what our pass rates look like for the when we divide the exam in the second pie chart above into two groups (those who took the course within 7 days of taking the exam, and those who didn't).
+Now that I am confident in having removed those records, let's get a feel of what our pass rates look like when we divide the exam in the second pie chart above into two groups (those who took the course within 7 days of taking the exam, and those who didn't).
 
 ![](images/bar_plot_7days.png)
 
