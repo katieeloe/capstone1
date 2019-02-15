@@ -85,10 +85,9 @@ Creating beta distributions for each group, and plotting the distributions toget
 ![](images/beta_dists_plots.png)  
 The distributions do not overlap, meaning if were to pull a random variable blindly from a group of all random variables for each distribution, we would be able to identify which distribution it came from, simply by looking at the value, 100% of the time.  
 
-In addition, if we were to pull a random variable from each distribution, 100% of the time, our RV from the distribution for those that take the course would be larger than the RV from the distribution for those that didn't take the course. Because of this, I can say 100% credibility, that it is always better to take the course before taking the exam.  
+In addition, if we were to pull a random variable from each distribution, 100% of the time, our RV from the distribution for those that take the course would be larger than the RV from the distribution for those that didn't take the course. Because of this, I can say with 100% credibility, that it is always better to take the course before taking the exam.  
 
 I also have 95.0% credible interval for passing rate of employees who take the course within 7 days of taking the exam: 0.871 (lower bound) - 0.903 (upper bound)
-95.0% credible interval for passing rate of employees who take the course within 7 days of taking the exam: 0.871 (lower bound) - 0.903 (upper bound
 
 #### MVP
 1. Clean data - successful
