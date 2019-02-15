@@ -1,4 +1,5 @@
-# Is on the Job Food Safety Training at QSRs enough? How Does it Compare to Accredited Programs?
+# Is on the Job Food Safety Training at QSRs enough?  
+## How Does it Compare to Accredited Programs?
 
 ![](images/cross_contamination2.jpg)  
 [Image Source](https://albion.ca/blog/2016/09/05/cross-contamination/)
