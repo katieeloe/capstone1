@@ -49,7 +49,7 @@ Report contains records corresponding to an instance of an employee "purchasing"
    * Data corresponding to classroom/paper exams exists and is included on the Exam Activity Report, but data on classroom courses does not exist.
    * While it can be assumed that anyone who took a paper exam, also took the course prior, I want to make sure I am comparing apples to apples, and therefore removed these records.  
  2. First-attempt exam records only  
-   * Allows reduction of other noise that could effect the outcome of an exam (like for example, having a similar exam previously)  
+   * Allows reduction of other noise that could effect the outcome of an exam (like for example, having seen a similar exam previously)  
  3. First-attempts records on or after 1/1/2017 only  
    * Initial roll-out (3/1/2016) and imposed deadlines for all managers to be certified are believed to have caused panic and a substantial increase in failures in the months following  
  4. Courses records with a current section of 10 or 11 (out of 11) counted as "course taken".  
@@ -63,7 +63,7 @@ Passes and failures for exam taken 1/1/2017 and 2/6/2019:
 ![](images/pie_after.png)
 
 
-Now let's get a feel of what our pass rates look like for the two groups (those who took the course within 7 days of taking the exam, and those who didn't).
+now that I am confident in having removed those records, let's get a feel of what our pass rates look like for the when we divide the exam in the second pie chart above into two groups (those who took the course within 7 days of taking the exam, and those who didn't).
 
 ![](images/bar_plot_7days.png)
 
@@ -82,7 +82,7 @@ So, knowing that I am working with only a sample of the true population, can I c
 
 Creating beta distributions for each group, and plotting the distributions together is VERY telling:  
 
-![](images\beta_dists_plots2.png)  
+![](images\beta_dists_plots.png)  
 The distributions do not overlap, meaning if were to pull a random variable blindly from a group of all random variables for each distribution, we would be able to identify which distribution it came from, simply by looking at the value, 100% of the time.  
 
 In addition, if we were to pull a random variable from each distribution, 100% of the time, our RV from the distribution for those that take the course would be larger than the RV from the distribution for those that didn't take the course. Because of this, I can say 100% credibility, that it is always better to take the course before taking the exam.  
@@ -98,5 +98,5 @@ I also have 95.0% credible interval for passing rate of employees who take the c
 #### Going Deeper
 If additional time was available, there were a couple areas that peaked my interest for deeper analysis:  
 1. For those with corresponding course data, can a linear model be fitted to successfully predict the score of an exam based on their score on the post-course quiz and the time between when the course was completed and the test was taken?
- 
+
 2. If I were able to obtain financial data associated to manager pay, and food safety certifications costs, I would like tie my A/B results to some financial analysis. Sure, we can say that you have a higher chance of passing the exam if you take the course prior. But, is the higher chance of passing on a first attempt enough to outweigh the labor and certification costs associated to it?
